@@ -8,22 +8,16 @@ class Auth extends React.Component {
   loginClickEvent = (e) => {
     e.preventDefault();
     const provider = new firebase.auth.FacebookAuthProvider();
-    provider.addScope('user_birthday');
-    firebase.auth().signInWithPopup(provider).then((result) {
-      // This gives you a Facebook Access Token.
-      const token = result.credential.accessToken;
-      // The signed-in user info.
-      const user = result.user;
-    });
+    firebase.auth().signInWithPopup(provider);
   }
 
-  // render() {
-  //   return (
-  //   <div className="Auth">
-  //       <h1>Auth Page</h1>
-  //       <button className="btn btn-danger" onClick={this.loginClickEvent}>Login With Google</button>
-  //     </div>
-  //   );
-  // }
-
+  render() {
+    return (
+    <div className="Auth">
+        <h1>Auth Page</h1>
+        <button className="btn btn-secondary" onClick={this.loginClickEvent}>Login With Facebook</button>
+      </div>
+    );
+  }
+}
 export default Auth;
