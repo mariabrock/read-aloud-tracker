@@ -2,18 +2,22 @@ import React from 'react';
 import './SingleBook.scss';
 
 import bookData from '../../../helpers/data/booksData';
+import Record from '../../shared/Record/Record';
+import recordsData from '../../../helpers/data/recordsData';
 
 class SingleBook extends React.Component {
   state = {
     book: {},
+    records: [],
   }
 
   componentDidMount() {
     const { bookId } = this.props.match.params;
-    console.log(bookId);
     bookData.getSingleBook(bookId)
       .then((response) => {
         this.setState({ book: response.data });
+        recordsData.getRecordsByBookId(bookId)
+          .then((result) => this.setState({ records: result }));
       })
       .catch((err) => console.error('error in get single book', err));
   }
@@ -21,8 +25,9 @@ class SingleBook extends React.Component {
   render() {
     const { book } = this.state;
     return (
-      <div className="SingleBook col-4">
-      <div className="card">
+      <div className="SingleBook">
+        <div className=" col-md-6">
+        <div className="card">
         <img src={book.imageUrl} className="card-img-top" alt="" />
           <div className="card-body">
             <h5 className="card-title">{book.title}</h5>
@@ -32,6 +37,12 @@ class SingleBook extends React.Component {
             {/* <button className ="btn btn-danger" onClick={this.deleteBookEvent}>X</button> */}
           </div>
       </div>
+        </div>
+        <div className=" col-md-6">
+        <div className="record">
+      {this.state.records.map((record) => <Record key={record.id} record={record} />)}
+      </div>
+        </div>
     </div>
     );
   }

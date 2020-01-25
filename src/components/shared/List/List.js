@@ -15,7 +15,7 @@ class List extends React.Component {
     render() {
       const { book } = this.props;
       return (
-    <div className="List col-3">
+    <div className="List col-md-6 col-lg-3">
         <div className="card">
             <div className="card-body">
               {/* <button className="btn btn-danger" onClick={this.deleteBookEvent}>X</button> */}
