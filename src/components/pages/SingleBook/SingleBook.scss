@@ -1,33 +1,8 @@
-* {
-    .SingleBook {
-      display: block;
-      width: 32%;
-      min-width: 200px;
-      margin: 0.66% auto;
-    }
-  }
-  
-  /* Mobile Styles */
-  @media only screen and (max-width: 400px) {
-    .SingleBook {
-      min-width: 200px;
-      margin: 0.66% auto;
-    }
-  }
-  
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    .SingleBook {
-      min-width: 200px;
-      margin: 0.66% auto;
-    }
-  }
-  
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    .SingleBook {
-      width: 32%;
-      min-width: 200px;
-      margin: 0.66% auto;
-    }
+.SingleBook {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    min-width: 200px;
+    margin: 10em auto;
   }
