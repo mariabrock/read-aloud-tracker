@@ -3,7 +3,7 @@ import './Booklist.scss';
 
 import booksData from '../../../helpers/data/booksData';
 import authData from '../../../helpers/data/authData';
-import Book from '../../shared/Book/Book';
+import List from '../../shared/List/List';
 
 class Booklist extends React.Component {
   state = {
@@ -31,7 +31,7 @@ class Booklist extends React.Component {
             <div className="Booklist">
                 <h1>All Books</h1>
                 <div className="booklist d-flex flex-wrap">
-                  {this.state.books.map((book) => (<Book key={book.id} book={book} deleteBook={this.deleteBook} />))}
+                  {this.state.books.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
                 </div>
             </div>
     );

@@ -6,6 +6,7 @@ import bookShape from '../../../helpers/propz/bookShape';
 class SingleBook extends React.Component {
   static propTypes = {
     book: bookShape.bookShape,
+    // deleteBook: this.propTypes.func,
   }
 
   render() {
@@ -19,6 +20,7 @@ class SingleBook extends React.Component {
             <p>By {book.author}</p>
             <p>Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
+            <button className ="btn btn-danger" onClick={this.deleteBookEvent}>X</button>
           </div>
       </div>
     </div>

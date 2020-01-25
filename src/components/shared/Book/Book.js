@@ -31,9 +31,6 @@ class Book extends React.Component {
         <img src={book.imageUrl} className="card-img-top" alt="" />
           <div className="card-body">
             <h5 className="card-title">{book.title}</h5>
-            <p>By {book.author}</p>
-            <p>Pages: {book.numOfPages}</p>
-            <p>Goal Date: {book.goalDate}</p>
             <Link className="btn btn-primary" to={`/book/${book.Id}`}>View</Link>
             <Link className="btn btn-warning" to={`/book/${book.Id}/edit/`}>Edit</Link>
           </div>

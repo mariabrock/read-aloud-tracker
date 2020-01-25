@@ -9,63 +9,63 @@
     "isFinished": true
   },
 
-  "book2": {
+ "book2": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "THe Hobbit(Or There And Back Again)",
     "author": "J.R.R. Tolkien",
     "numOfPages": 366,
-    "goalDate": "3/16/19",
+    "goalDate": "9/16/20",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F3.bp.blogspot.com%2F-IBGmA4XPYzw%2FUS3Gg_Na8jI%2FAAAAAAAAAbE%2FGsjf2jQ_LJ4%2Fs1600%2Fthe-hobbit.jpg&f=1&nofb=1",
-    "isFinished": true
+    "isFinished": false
   },
 
-  "book3": {
+ "book3": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "Who Moved My Cheese?",
     "author": "Dr. Spencer Johnson",
     "numOfPages": 96,
-    "goalDate": "2/20/20",
+    "goalDate": "1/2/20",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ffastertomaster.com%2Fwp-content%2Fuploads%2F2019%2F07%2Fwho-moved-my-cheese-summary.jpg&f=1&nofb=1",
-    "isFinished": false
+    "isFinished": true
   },
 
-  "book4": {
+ "book4": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "A Wrinkle In Time",
     "author": "Madeleine L'Engle",
     "numOfPages": 218,
-    "goalDate": "10/27/19",
+    "goalDate": "",
     "imageUrl": "https://i.gr-assets.com/images/S/compressed.photo.goodreads.com/books/1507963312l/33574273._SX318_.jpg",
-    "isFinished": true
+    "isFinished": false
   },
-  "book5": {
+ "book5": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "Ender's Game",
     "author": "Orson Scott Card",
     "numOfPages": 324,
-    "goalDate": "5/18/20",
+    "goalDate": "",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fendersansible.com%2Fwp-content%2Fuploads%2F2014%2F04%2F9780812550702_custom-14b6b3e2b8be027acc868fa0aba0670be8900168-s6-c30.jpg&f=1&nofb=1",
     "isFinished": false
   },
-  "book6": {
+ "book6": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "If You give a Moose a Muffin",
     "author": "Laura Numeroff",
     "numOfPages": 32,
-    "goalDate": "",
+    "goalDate": "01/31/19",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2F4.bp.blogspot.com%2F-xE-uzMWDvjo%2FT2oMLSaTuMI%2FAAAAAAAAASY%2FbFtEyVcqpEA%2Fs1600%2FGive%2BA%2BMoose%2BA%2BMuffin.jpg&f=1&nofb=1",
-    "isFinished": false
+    "isFinished": true
   },
-  "book7": {
+ "book7": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "Winnie The Pooh",
-    "author": "A.A. Mline",
+    "author": "A.A. Milne",
     "numOfPages": 145,
     "goalDate": "",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Ftse1.mm.bing.net%2Fth%3Fid%3DOIP.eHv_PW7yUGYVFIK_YXenFwHaLk%26pid%3DApi&f=1",
     "isFinished": false
   },
-  "book8": {
+ "book8": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "And Then There Were None",
     "author": "Agatha Christie",
@@ -74,16 +74,16 @@
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fdeathhour.files.wordpress.com%2F2012%2F05%2Fand_then_there_were_none-pb-c.jpg&f=1&nofb=1",
     "isFinished": false
   },
-  "book9": {
+ "book9": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
-    "title": "The Guernsey Literary and Potato Peel Pie Society",
+    "title": "The Guernsey LIterary and Potato Peel Pie Society",
     "author": "Mary Ann Shaffer & Annie Barrows",
     "numOfPages": 291,
     "goalDate": "",
     "imageUrl": "https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fmedia.bloomsbury.com%2Frep%2Fbj%2F9781408803318.jpg&f=1&nofb=1",
     "isFinished": false
   },
-  "book10": {
+ "book10": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
     "title": "The Martian",
     "author": "Andy Weir",
@@ -93,5 +93,4 @@
     "isFinished": false
   }
 }
-  
   

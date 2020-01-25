@@ -4,10 +4,10 @@ import PropTypes from 'prop-types';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import {
-  faHome,
+  // faHome,
   faList,
   faClock,
-  faBookmark,
+  // faBookmark,
 } from '@fortawesome/free-solid-svg-icons';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 
@@ -29,17 +29,17 @@ class Navbar extends React.Component {
         if (authed) {
           return (
             <ul className="navbar-nav ml-auto">
-              <li className="nav-item">
-                <Link className="nav-link" to="/"><FontAwesomeIcon icon={faHome}/></Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/book/:bookId"><FontAwesomeIcon icon={faBookmark}/></Link>
-              </li>
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/booklist"><FontAwesomeIcon icon={faHome}/></Link>
+              </li> */}
+              {/* <li className="nav-item">
+                <Link className="nav-link" to="/book/:bookId"><FontAwesomeIcon icon={faBookmark}/></Link> */}
+              {/* </li> */}
               <li className="nav-item">
                 <Link className="nav-link" to="/record"><FontAwesomeIcon icon={faClock}/></Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/booklist"><FontAwesomeIcon icon={faList} /></Link>
+                <Link className="nav-link" to="/"><FontAwesomeIcon icon={faList} /></Link>
               </li>
               <li className="nav-item">
                 <button className="nav-link btn btn-primary" onClick={this.logMeOut}>Logout</button>
@@ -53,7 +53,7 @@ class Navbar extends React.Component {
       return (
         <div className="MyNavbar">
             <nav className="navbar navbar-expand-lg navbar-dark bg-secondary">
-              <Link className="navbar-brand" to="/">Imagine Out Loud</Link>
+              <Link className="navbar-brand" to="/booklist">Imagine Out Loud</Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                         <span className="navbar-toggler-icon"></span>
                     </button>
