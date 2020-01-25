@@ -1,16 +1,25 @@
 import React from 'react';
 import './SingleBook.scss';
 
-import bookShape from '../../../helpers/propz/bookShape';
+import bookData from '../../../helpers/data/booksData';
 
 class SingleBook extends React.Component {
-  static propTypes = {
-    book: bookShape.bookShape,
-    // deleteBook: this.propTypes.func,
+  state = {
+    book: {},
+  }
+
+  componentDidMount() {
+    const { bookId } = this.props.match.params;
+    console.log(bookId);
+    bookData.getSingleBook(bookId)
+      .then((response) => {
+        this.setState({ book: response.data });
+      })
+      .catch((err) => console.error('error in get single book', err));
   }
 
   render() {
-    const { book } = this.props;
+    const { book } = this.state;
     return (
       <div className="SingleBook col-4">
       <div className="card">
@@ -20,7 +29,7 @@ class SingleBook extends React.Component {
             <p>By {book.author}</p>
             <p>Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
-            <button className ="btn btn-danger" onClick={this.deleteBookEvent}>X</button>
+            {/* <button className ="btn btn-danger" onClick={this.deleteBookEvent}>X</button> */}
           </div>
       </div>
     </div>
