@@ -28,11 +28,10 @@ class Booklist extends React.Component {
   }
 
   render() {
-    const { book } = this.state;
     return (
             <div className="Booklist">
                 <h1>All Books</h1>
-                <Link className="btn btn-secondary" to={`/book/${book.id}/new`}>Add New Book</Link>
+                <Link className="btn btn-secondary" to={'/book/new'}>Add New Book</Link>
                 <div className="booklist d-flex flex-wrap">
                   {this.state.books.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
                 </div>
