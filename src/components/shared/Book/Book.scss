@@ -1,9 +1,15 @@
+.card {
+  display: block;
+  width: 32%;
+}
+
 * {
     .Books {
-      display: block;
+      display: flex row wrap;
       width: 32%;
       min-width: 200px;
       margin: 0.66% auto;
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
     }
   }
   
@@ -12,6 +18,7 @@
     .Books {
       min-width: 200px;
       margin: 0.66% auto;
+      box-shadow: 0 8px 16px rgba(0,0,0,.175);
     }
   }
   
@@ -20,6 +27,7 @@
     .Books {
       min-width: 200px;
       margin: 0.66% auto;
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
     }
   }
   
@@ -29,5 +37,6 @@
       width: 32%;
       min-width: 200px;
       margin: 0.66% auto;
+      box-shadow: 0 6px 12px rgba(0,0,0,.175);
     }
   }
