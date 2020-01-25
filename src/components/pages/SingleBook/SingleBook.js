@@ -39,7 +39,7 @@ class SingleBook extends React.Component {
       </div>
         </div>
         <div className=" col-md-6">
-        <div className="record">
+        <div>
       {this.state.records.map((record) => <Record key={record.id} record={record} />)}
       </div>
         </div>
