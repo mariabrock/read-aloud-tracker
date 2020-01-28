@@ -54,8 +54,25 @@ class BookForm extends React.Component {
     this.setState({ bookImageUrl: e.target.value });
   }
 
+  editBookEvent = (e) => {
+    const { bookId } = this.props.match.params;
+    e.preventDefault();
+    const editBook = {
+      title: this.state.bookTitle,
+      author: this.state.bookAuthor,
+      goalDate: this.state.bookGoalDate,
+      numOfPages: this.state.bookNumOfPages,
+      imageUrl: this.state.bookImageUrl,
+      uid: authData.getUid(),
+    };
+    booksData.updateBook(bookId, editBook)
+      .then(() => this.props.history.push(`/book/${bookId}`))
+      .catch((err) => console.error('error from editBook', err));
+  }
+
   saveBookEvent = (e) => {
     e.preventDefault();
+    const { bookId } = this.props.match.params;
     const newBook = {
       title: this.state.bookTitle,
       author: this.state.bookAuthor,
@@ -65,7 +82,7 @@ class BookForm extends React.Component {
       uid: authData.getUid(),
     };
     booksData.saveBook(newBook)
-      .then(() => this.props.history.push('/'))
+      .then(() => this.props.history.push(`/book/${bookId}`))
       .catch((err) => console.error('error from save book', err));
   }
 
