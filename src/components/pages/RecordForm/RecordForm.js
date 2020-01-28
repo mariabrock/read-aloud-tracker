@@ -27,12 +27,12 @@ class RecordForm extends React.Component {
 
   durationChange = (e) => {
     e.preventDefault();
-    this.setState({ duration: e.target.value });
+    this.setState({ duration: e.target.value * 1 });
   }
 
   numOfPagesReadChange = (e) => {
     e.preventDefault();
-    this.setState({ numOfPagesRead: e.target.value });
+    this.setState({ numOfPagesRead: e.target.value * 1 });
   }
 
   editRecordEvent = (e) => {
@@ -56,6 +56,7 @@ class RecordForm extends React.Component {
       duration: this.state.duration,
       numOfPagesRead: this.state.numOfPagesRead,
       uid: authData.getUid(),
+      bookId,
     };
     recordsData.saveRecord(newRecord)
       .then(() => this.props.history.push(`/book/${bookId}`))
