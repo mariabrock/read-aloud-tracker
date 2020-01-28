@@ -1,4 +1,10 @@
+@import '../../../styles/variables';
+
 .card {
   display: block;
   width: 32%;
+}
+
+.card-body {
+  background-color: $dodgerBlue;
 }

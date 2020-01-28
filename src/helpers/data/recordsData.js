@@ -26,9 +26,9 @@ const getSingleRecord = (recordId) => axios.get(`${baseUrl}/records/${recordId}.
 
 const deleteRecord = (recordId) => axios.delete(`${baseUrl}/records/${recordId}.json`);
 
-const saveRecord = (newRecord) => axios.post(`${baseUrl}/pins.json`, newRecord);
+const saveRecord = (newRecord) => axios.post(`${baseUrl}/records.json`, newRecord);
 
-const editRecord = (recordId, pin) => axios.put(`${baseUrl}/pins/${recordId}.json`, pin);
+const editRecord = (recordId, record) => axios.put(`${baseUrl}/records/${recordId}.json`, record);
 
 export default {
   getRecordsByBookId,
