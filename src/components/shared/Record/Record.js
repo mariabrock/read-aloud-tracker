@@ -14,9 +14,9 @@ class Record extends React.Component {
       <div className="Record">
         <div className="card">
             <div className="card-body">
-              <p class="card-text">Time: {record.duration}</p>
-              <p class="card-text">Pages:{record.numOfPagesRead}</p>
-              <p class="card-text"><small class="text-muted">Date: Last updated 3 mins ago</small></p>
+              <p className="card-text">Time: {record.duration}</p>
+              <p className="card-text">Pages: {record.numOfPagesRead}</p>
+              <p className="card-text"><small className="text-muted">Date: Last updated 3 mins ago</small></p>
             </div>
         </div>
     </div>
