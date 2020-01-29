@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Booklist.scss';
 
+import Smash from '../../shared/Smash/Smash';
 import booksData from '../../../helpers/data/booksData';
 import authData from '../../../helpers/data/authData';
 import List from '../../shared/List/List';
@@ -33,6 +34,7 @@ class Booklist extends React.Component {
                 <h1>All Books</h1>
                 <Link className="btn btn-secondary" to={'/book/new'}>Add New Book</Link>
                 <div className="booklist d-flex flex-wrap">
+                  <Smash></Smash>
                   {this.state.books.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
                 </div>
             </div>
