@@ -37,6 +37,7 @@ class SingleBook extends React.Component {
             <p>Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
             {/* <button className ="btn btn-danger" onClick={this.deleteBookEvent}>X</button> */}
+            <Link className="btn btn-warning" to={`/book/${bookId}/edit`}>Edit Book</Link>
             <Link className="btn btn-secondary" to={`/record/${bookId}/new`}>Add A Record</Link>
           </div>
       </div>
