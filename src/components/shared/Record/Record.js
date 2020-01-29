@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import './Record.scss';
 
 import recordShape from '../../../helpers/propz/recordShape';
@@ -6,6 +7,13 @@ import recordShape from '../../../helpers/propz/recordShape';
 class Record extends React.Component {
   static propTypes = {
     record: recordShape.recordShape,
+    deleteRecord: PropTypes.func,
+  }
+
+  deleteRecordEvent = (e) => {
+    e.preventDefault();
+    const { deleteRecord, record } = this.props;
+    deleteRecord(record.id);
   }
 
   render() {
@@ -17,6 +25,7 @@ class Record extends React.Component {
               <p className="card-text">Time: {record.duration}</p>
               <p className="card-text">Pages: {record.numOfPagesRead}</p>
               <p className="card-text"><small className="text-muted">Date: Last updated 3 mins ago</small></p>
+              <button className ="del-record btn btn-danger" onClick={this.deleteRecordEvent}>X</button>
             </div>
         </div>
     </div>
