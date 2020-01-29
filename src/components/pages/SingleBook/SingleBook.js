@@ -12,6 +12,19 @@ class SingleBook extends React.Component {
     records: [],
   }
 
+  getRecordData = (bookId) => {
+    recordsData.getRecordsByBookId(bookId)
+      .then((records) => this.setState({ records }))
+      .catch((err) => console.error('error in get records', err));
+  }
+
+  deleteRecord = (recordId) => {
+    const { bookId } = this.props.match.params;
+    recordsData.deleteRecord(recordId)
+      .then(() => this.getRecordData(bookId))
+      .catch((err) => console.error('error in get deleteRecord', err));
+  }
+
   componentDidMount() {
     const { bookId } = this.props.match.params;
     bookData.getSingleBook(bookId)
@@ -36,7 +49,6 @@ class SingleBook extends React.Component {
             <p>By {book.author}</p>
             <p>Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
-            {/* <button className ="btn btn-danger" onClick={this.deleteBookEvent}>X</button> */}
             <Link className="btn btn-warning" to={`/book/${bookId}/edit`}>Edit Book</Link>
             <Link className="btn btn-secondary" to={`/record/${bookId}/new`}>Add A Record</Link>
           </div>
@@ -44,7 +56,7 @@ class SingleBook extends React.Component {
         </div>
         <div className=" col-md-6">
         <div>
-      {this.state.records.map((record) => <Record key={record.id} record={record} />)}
+      {this.state.records.map((record) => <Record key={record.id} record={record} deleteRecord={this.deleteRecord} />)}
       </div>
         </div>
     </div>
