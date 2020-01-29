@@ -11,7 +11,7 @@
 
  "book2": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
-    "title": "THe Hobbit(Or There And Back Again)",
+    "title": "The Hobbit (Or There And Back Again)",
     "author": "J.R.R. Tolkien",
     "numOfPages": 366,
     "goalDate": "9/16/20",
@@ -76,7 +76,7 @@
   },
  "book9": {
     "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
-    "title": "The Guernsey LIterary and Potato Peel Pie Society",
+    "title": "The Guernsey Literary and Potato Peel Pie Society",
     "author": "Mary Ann Shaffer & Annie Barrows",
     "numOfPages": 291,
     "goalDate": "",

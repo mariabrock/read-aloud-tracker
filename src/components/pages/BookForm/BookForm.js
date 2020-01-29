@@ -10,6 +10,7 @@ class BookForm extends React.Component {
     bookAuthor: '',
     bookGoalDate: '',
     bookNumOfPages: '',
+    bookImageUrl: '',
   }
 
   componentDidMount() {
