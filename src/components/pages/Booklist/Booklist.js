@@ -2,19 +2,22 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import './Booklist.scss';
 
-import Smash from '../../shared/Smash/Smash';
 import booksData from '../../../helpers/data/booksData';
-import authData from '../../../helpers/data/authData';
 import List from '../../shared/List/List';
+import smash from '../../../helpers/data/smash';
 
 class Booklist extends React.Component {
   state = {
-    books: [],
+    allBooks: [],
+    completeBooks: [],
+    wishListBooks: [],
+    inProgressBooks: [],
+    selectedBooks: [],
   }
 
   getBooks = () => {
-    booksData.getBooksByUid(authData.getUid())
-      .then((books) => this.setState({ books }))
+    smash.smash()
+      .then((smashObj) => this.setState({ allBooks: smashObj.allBooks, selectedBooks: smashObj.allBooks, records: smashObj.records }))
       .catch((err) => console.error('error from get books', err));
   }
 
@@ -33,9 +36,12 @@ class Booklist extends React.Component {
             <div className="Booklist">
                 <h1>All Books</h1>
                 <Link className="btn btn-secondary" to={'/book/new'}>Add New Book</Link>
+                <button className="btn btn-primary">Complete</button>
+                <button className="btn btn-warning">In-Progress</button>
+                <button className="btn btn-danger">Wishlist</button>
+                <button className="btn btn-success">All Books</button>
                 <div className="booklist d-flex flex-wrap">
-                  <Smash></Smash>
-                  {this.state.books.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
+                  {this.state.selectedBooks.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
                 </div>
             </div>
     );
