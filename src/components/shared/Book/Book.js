@@ -26,7 +26,7 @@ class Book extends React.Component {
   render() {
     const { book } = this.props;
     return (
-    <div className="Book col-8">
+    <div className="Book col-8 bg-dodger-blue">
       <div className="card">
         <img src={book.imageUrl} className="card-img-top" alt="" />
           <div className="card-body">

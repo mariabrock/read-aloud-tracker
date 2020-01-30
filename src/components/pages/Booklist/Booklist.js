@@ -42,7 +42,7 @@ class Booklist extends React.Component {
   showInProgressBooks = () => this.setState({ selectedBooks: this.state.inProgressBooks });
 
   showWishlistBooks = () => this.setState({ selectedBooks: this.state.wishListBooks });
-  
+
   showAllBooks = () => this.setState({ selectedBooks: this.state.allBooks });
 
   render() {
@@ -50,9 +50,9 @@ class Booklist extends React.Component {
             <div className="Booklist">
                 <h1>All Books</h1>
                 <Link className="btn btn-secondary" to={'/book/new'}>Add New Book</Link>
-                <button className="btn btn-primary" onClick={this.showCompletedBooks}>Complete</button>
+                <button className="btn btn-danger" onClick={this.showCompletedBooks}>Complete</button>
                 <button className="btn btn-warning" onClick={this.showInProgressBooks}>In-Progress</button>
-                <button className="btn btn-danger" onClick={this.showWishlistBooks}>Wishlist</button>
+                <button className="btn btn-info" onClick={this.showWishlistBooks}>Wishlist</button>
                 <button className="btn btn-success" onClick={this.showAllBooks}>All Books</button>
                 <div className="booklist d-flex flex-wrap">
                   {this.state.selectedBooks.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
