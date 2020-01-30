@@ -30,10 +30,30 @@ const saveRecord = (newRecord) => axios.post(`${baseUrl}/records.json`, newRecor
 
 const editRecord = (recordId, record) => axios.put(`${baseUrl}/records/${recordId}.json`, record);
 
+const getRecordsByUid = (uid) => new Promise((resolve, reject) => {
+  axios.get(`${baseUrl}/records.json?orderBy="uid"&equalTo="${uid}"`)
+    .then((result) => {
+      const allRecordsObj = result.data;
+      const records = [];
+      if (allRecordsObj != null) {
+        Object.keys(allRecordsObj).forEach((recordId) => {
+          const newRecord = allRecordsObj[recordId];
+          newRecord.id = recordId;
+          records.push(newRecord);
+        });
+      }
+      resolve(records);
+    })
+    .catch((err) => {
+      reject(err);
+    });
+});
+
 export default {
   getRecordsByBookId,
   getSingleRecord,
   deleteRecord,
   saveRecord,
   editRecord,
+  getRecordsByUid,
 };
