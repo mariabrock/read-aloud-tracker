@@ -17,3 +17,14 @@ code {
     monospace;
 }
 
+.card {
+  background-color: $dodgerBlue;
+  border: none;
+}
+
+.Record {
+  background-color: $dkyellow;
+  border: solid 5px $dodgerBlue;
+  height: min-content;
+  width: min-content;
+}

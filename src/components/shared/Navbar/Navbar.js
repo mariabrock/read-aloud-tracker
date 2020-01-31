@@ -29,20 +29,11 @@ class Navbar extends React.Component {
         if (authed) {
           return (
             <ul className="navbar-nav ml-auto">
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="/booklist"><FontAwesomeIcon icon={faHome}/></Link>
-              </li> */}
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="/book/:bookId"><FontAwesomeIcon icon={faBookmark}/></Link> */}
-              {/* </li> */}
-              {/* <li className="nav-item">
-                <Link className="nav-link" to="/record"><FontAwesomeIcon icon={faClock}/></Link>
-              </li> */}
               <li className="nav-item">
-                <Link className="nav-link" to="/"><FontAwesomeIcon icon={faList} size="lg" /></Link>
+                <Link className="nav-link" to="/"><FontAwesomeIcon icon={faList} id="list" size="2x" /></Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link btn btn-primary" onClick={this.logMeOut}>Logout</button>
+                <button className="nav-link btn btn-primary d-none d-lg-inline-block" onClick={this.logMeOut}>Logout</button>
               </li>
             </ul>
           );
