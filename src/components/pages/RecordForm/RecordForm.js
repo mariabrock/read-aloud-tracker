@@ -57,6 +57,7 @@ class RecordForm extends React.Component {
       numOfPagesRead: this.state.numOfPagesRead,
       uid: authData.getUid(),
       bookId,
+      date: new Date(),
     };
     recordsData.saveRecord(newRecord)
       .then(() => this.props.history.push(`/book/${bookId}`))

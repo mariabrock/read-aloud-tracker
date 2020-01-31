@@ -21,11 +21,11 @@ class Record extends React.Component {
     const { record } = this.props;
     return (
       <div className="Record">
-        <div className="card">
+        <div className="record-card">
             <div className="card-body">
               <p className="card-text">Time: {record.duration}</p>
               <p className="card-text">Pages: {record.numOfPagesRead}</p>
-              <p className="card-text"><small className="text-muted"><p>{moment(record.date).format('MMMM Do YYYY, h:mm:ss a')}</p></small></p>
+              <p className="card-text"><small className="text-muted"><p>{moment(record.date).format('MMMM Do YYYY')}</p></small></p>
               <button className ="del-record btn btn-danger" onClick={this.deleteRecordEvent}>X</button>
             </div>
         </div>

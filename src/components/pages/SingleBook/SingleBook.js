@@ -41,25 +41,25 @@ class SingleBook extends React.Component {
     const { bookId } = this.props.match.params;
     return (
       <div className="SingleBook">
-        <div className=" col-md-6">
+        <div className=" col-sm-6">
         <div className="card">
         <img src={book.imageUrl} className="card-img-top" alt={book.imageUrl} />
           <div className="card-body">
             <h5 className="card-title">{book.title}</h5>
             <p>By {book.author}</p>
-            <p>Pages: {book.numOfPages}</p>
+            <p>Total Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
             <Link className="btn btn-warning" to={`/book/${bookId}/edit`}>Edit Book</Link>
             <Link className="btn btn-secondary" to={`/record/${bookId}/new`}>Add A Record</Link>
           </div>
       </div>
         </div>
-        <div className=" col-md-6">
-        <div>
-      {this.state.records.map((record) => <Record key={record.id} record={record} deleteRecord={this.deleteRecord} />)}
-      </div>
+        <div className="col-sm-6">
+          <div className="d-flex flex-wrap">
+            {this.state.records.map((record) => <Record key={record.id} record={record} deleteRecord={this.deleteRecord} />)}
+          </div>
         </div>
-    </div>
+      </div>
     );
   }
 }

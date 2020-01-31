@@ -2,14 +2,14 @@
 
   .booklist {
     width: 100%;
-    display: flex;
-    justify-content: center;
-    flex-direction: row;
     min-width: 200px;
-    margin: 10em auto;
-    background-color: $dodgerBlue;
+    margin: none;
   }
 
   h1 {
-    padding: 1em;
+    padding: .5em;
+  }
+
+  .btn{
+    margin: 1em;
   }

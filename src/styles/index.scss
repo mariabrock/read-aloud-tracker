@@ -17,36 +17,14 @@ code {
     monospace;
 }
 
-// * {
-//   .App {
-//     display: block;
-//     width: 32%;
-//     min-width: 200px;
-//     margin: 0.66% auto;
-//   }
-// }
+.card {
+  background-color: $dodgerBlue;
+  border: none;
+}
 
-// /* Mobile Styles */
-// @media only screen and (max-width: 400px) {
-//   .App {
-//     min-width: 200px;
-//     margin: 0.66% auto;
-//   }
-// }
-
-// /* Tablet Styles */
-// @media only screen and (min-width: 401px) and (max-width: 960px) {
-//   .App {
-//     min-width: 200px;
-//     margin: 0.66% auto;
-//   }
-// }
-
-// /* Desktop Styles */
-// @media only screen and (min-width: 961px) {
-//   .App {
-//     width: 32%;
-//     min-width: 200px;
-//     margin: 0.66% auto;
-//   }
-// }
+.Record {
+  background-color: $dkyellow;
+  border: solid 5px $dodgerBlue;
+  height: min-content;
+  width: min-content;
+}
