@@ -28,10 +28,10 @@ class Book extends React.Component {
     return (
     <div className="Book col-8">
       <div className="card">
-        <img src={book.imageUrl} className="card-img-top" alt="" />
+        <img src={book.imageUrl} id="book-image" className="card-img-top" alt="" />
           <div className="card-body">
             <h5 className="card-title">{book.title}</h5>
-            <Link className="btn btn-primary" to={`/book/${book.Id}`}>View</Link>
+            <Link className="btn btn-secondary" to={`/book/${book.Id}`}>View</Link>
             <Link className="btn btn-warning" to={`/book/${book.Id}/edit/`}>Edit</Link>
           </div>
       </div>

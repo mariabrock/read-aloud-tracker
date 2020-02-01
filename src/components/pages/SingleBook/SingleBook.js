@@ -41,16 +41,16 @@ class SingleBook extends React.Component {
     const { bookId } = this.props.match.params;
     return (
       <div className="SingleBook">
-        <div className=" col-sm-6">
+        <div className=" col-sm-4">
         <div className="card">
-        <img src={book.imageUrl} className="card-img-top" alt={book.imageUrl} />
+        <img src={book.imageUrl} className="card-img-top" id="singleBook-image" alt={book.imageUrl} />
           <div className="card-body">
             <h5 className="card-title">{book.title}</h5>
             <p>By {book.author}</p>
             <p>Total Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
             <Link className="btn btn-warning" to={`/book/${bookId}/edit`}>Edit Book</Link>
-            <Link className="btn btn-secondary" to={`/record/${bookId}/new`}>Add A Record</Link>
+            <Link className="btn btn-success" to={`/record/${bookId}/new`}>Add A Record</Link>
           </div>
       </div>
         </div>

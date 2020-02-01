@@ -73,7 +73,6 @@ class BookForm extends React.Component {
 
   saveBookEvent = (e) => {
     e.preventDefault();
-    const { bookId } = this.props.match.params;
     const newBook = {
       title: this.state.bookTitle,
       author: this.state.bookAuthor,
@@ -83,7 +82,7 @@ class BookForm extends React.Component {
       uid: authData.getUid(),
     };
     booksData.saveBook(newBook)
-      .then(() => this.props.history.push(`/book/${bookId}`))
+      .then(() => this.props.history.push('/'))
       .catch((err) => console.error('error from save book', err));
   }
 
