@@ -2,7 +2,14 @@
 @import './variables';
 
 body {
+  background-image: url(https://images.unsplash.com/photo-1517148892120-4d2da39c8dc1?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1868&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   background-color: $dodgerBlue;
+  height: 500px;
+  background-position: center;
+  background-size: auto;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -18,17 +25,37 @@ code {
 }
 
 .card {
-  background-color: $dodgerBlue;
+  color: $light;
+  background-color: $dark;
+  box-shadow: 0 3px 3px 0 $black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
+  margin-bottom: 1em;
+  margin-top: 1em;
 }
 
 .Record {
-  background-color: $dkyellow;
-  border: solid 5px $dodgerBlue;
+  color: $light;
+  background-color: $dodgerBlue;
+  border: solid 5px $dark;
   height: min-content;
   width: min-content;
 }
 
 .btn {
   color: $light;
+  text-shadow: 1px 1px $dark;
+}
+
+h1, h5 {
+  color: $light;
+  text-shadow: 2px 2px $dark;
+}
+
+img {
+  object-fit: contain;
+  height: 500px
+}
+
+#singleBook-image {
+  padding-top: 2em;
 }
