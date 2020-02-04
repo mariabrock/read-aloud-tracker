@@ -99,57 +99,67 @@ class BookForm extends React.Component {
     return (
       <form className="BookForm">
         <div className="form-group">
-          <label htmlFor="book-title">Book Title</label>
-            <input
-              type="text"
-              className="form-control"
-              id="book-title"
-              placeholder="Enter Book Title"
-              value={bookTitle}
-              onChange={this.titleChange}
-              />
-          <label htmlFor="book-author">Book Author</label>
+          <div className="form-row">
+            <div className="col-md-12">
+              <h1>Book Info</h1>
+              <label htmlFor="book-title"></label>
                 <input
                   type="text"
                   className="form-control"
-                  id="book-author"
-                  placeholder="Enter Author Name"
-                  value={bookAuthor}
-                  onChange={this.authorChange}
+                  id="book-title"
+                  placeholder="Enter Book Title"
+                  value={bookTitle}
+                  onChange={this.titleChange}
                   />
-          <label htmlFor="book-author">Goal Date</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="goal-date"
-                  placeholder="Enter Goal Date"
-                  value={bookGoalDate}
-                  onChange={this.goalDateChange}
-                  />
-          <label htmlFor="book-author">Number of Total Pages</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="total-pages"
-                  placeholder="Enter Total Pages"
-                  value={bookNumOfPages}
-                  onChange={this.numOfPagesChange}
-                  />
-          <label htmlFor="book-image">Book Image Url</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="book-image"
-                  placeholder="Enter Image Url"
-                  value={bookImageUrl}
-                  onChange={this.imageUrlChange}
-                  />
-                </div>
-                { bookId
-                  ? <button className="btn btn-secondary" onClick={this.editBookEvent}>Update Book</button>
-                  : <button className="btn btn-secondary" onClick={this.saveBookEvent}>Save Book</button>
-                }
-            </form>
+              <label htmlFor="book-author"></label>
+                    <input
+                      type="text"
+                      className="form-control"
+                      id="book-author"
+                      placeholder="Enter Author Name"
+                      value={bookAuthor}
+                      onChange={this.authorChange}
+                      />
+          </div>
+        </div>
+        <div className="form-row">
+          <div className="col-md-12">
+            <label htmlFor="book-author"></label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="goal-date"
+                    placeholder="Enter Goal Date"
+                    value={bookGoalDate}
+                    onChange={this.goalDateChange}
+                    />
+            <label htmlFor="book-author"></label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="total-pages"
+                    placeholder="Enter Total Pages"
+                    value={bookNumOfPages}
+                    onChange={this.numOfPagesChange}
+                    />
+            <label htmlFor="book-image"></label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="book-image"
+                    placeholder="Enter Image Url"
+                    value={bookImageUrl}
+                    onChange={this.imageUrlChange}
+                    />
+            </div>
+          </div>
+                  { bookId
+                    ? <button className="btn btn-primary" onClick={this.editBookEvent}>Update Book</button>
+                    : <button className="btn btn-primary" onClick={this.saveBookEvent}>Save Book</button>
+                    }
+        </div>
+
+      </form>
     );
   }
 }

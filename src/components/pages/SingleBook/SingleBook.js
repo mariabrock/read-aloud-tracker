@@ -49,8 +49,8 @@ class SingleBook extends React.Component {
             <p>By {book.author}</p>
             <p>Total Pages: {book.numOfPages}</p>
             <p>Goal Date: {book.goalDate}</p>
-            <Link className="btn btn-warning shadow-sm" to={`/book/${bookId}/edit`}>Edit Book</Link>
-            <Link className="btn btn-success shadow-sm" to={`/record/${bookId}/new`}>Add A Record</Link>
+            <Link className="btn btn-warning" to={`/book/${bookId}/edit`}>Edit Book</Link>
+            <Link className="btn btn-success" to={`/record/${bookId}/new`}>Add A Record</Link>
           </div>
       </div>
         </div>

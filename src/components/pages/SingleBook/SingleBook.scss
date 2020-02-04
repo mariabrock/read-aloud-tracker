@@ -1,13 +1,18 @@
+@import '../../../styles/variables';
+
 .SingleBook {
     width: 100%;
     display: flex;
     justify-content: center;
     flex-direction: row;
-    min-width: 200px;
-    margin: 10em auto;
+    margin-top: 5em;
   }
 
   .Record {
     display: flex;
     flex-direction: row;
+    box-shadow: 0 3px 3px 0 $black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border: none;
+    border-radius: 5px;
+    margin: auto;
   }

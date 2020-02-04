@@ -49,7 +49,7 @@ class Booklist extends React.Component {
     return (
             <div className="Booklist">
                 <h1>All Books</h1>
-                <Link className="btn btn-secondary shadow-sm" to={'/book/new'}>Add New Book</Link>
+                <Link className="btn btn-secondary" to={'/book/new'}>Add New Book</Link>
                 <button className="btn btn-success" onClick={this.showAllBooks}>All Books</button>
                 <button className="btn btn-danger" onClick={this.showCompletedBooks}>Complete</button>
                 <button className="btn btn-warning" onClick={this.showInProgressBooks}>In-Progress</button>

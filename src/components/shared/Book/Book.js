@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom';
+// import { Link } from 'react-router-dom';
 
 import bookShape from '../../../helpers/propz/bookShape';
 import './Book.scss';
@@ -31,8 +31,8 @@ class Book extends React.Component {
         <img src={book.imageUrl} id="book-image" className="card-img-top" alt="" />
           <div className="card-body">
             <h5 className="card-title">{book.title}</h5>
-            <Link className="btn btn-secondary" to={`/book/${book.Id}`}>View</Link>
-            <Link className="btn btn-warning" to={`/book/${book.Id}/edit/`}>Edit</Link>
+            {/* <Link className="btn btn-success" to={`/book/${book.Id}`}>View</Link>
+            <Link className="btn btn-warning" to={`/book/${book.Id}/edit/`}>Edit</Link> */}
           </div>
       </div>
     </div>
