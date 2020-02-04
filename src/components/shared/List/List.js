@@ -21,7 +21,7 @@ class List extends React.Component {
               {/* <button className="btn btn-danger" onClick={this.deleteBookEvent}>X</button> */}
               <h5 className="card-title">{book.title}</h5>
               <img src={book.imageUrl} className="card-img-top" alt={book.title} />
-                <Link className="btn btn-primary" to={`/book/${book.id}`}>View</Link>
+                <Link className="btn btn-success" to={`/book/${book.id}`}>View</Link>
             </div>
         </div>
     </div>

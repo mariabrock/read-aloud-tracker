@@ -74,29 +74,34 @@ class RecordForm extends React.Component {
     return (
       <form className="RecordForm">
         <div className="form-group">
-          <label htmlFor="duration">How Long Did You Read?</label>
-            <input
-              type="text"
-              className="form-control"
-              id="duration"
-              placeholder="Enter Duration"
-              value={duration}
-              onChange={this.durationChange}
-              />
-          <label htmlFor="pages-read">Number of Total Pages Read</label>
-                <input
-                  type="text"
-                  className="form-control"
-                  id="pages-read"
-                  placeholder="Enter Total Pages Read"
-                  value={numOfPagesRead}
-                  onChange={this.numOfPagesReadChange}
-                  />
-                </div>
-                { recordId
-                  ? <button className="btn btn-secondary" onClick={this.editRecordEvent}>Update Record</button>
-                  : <button className="btn btn-secondary" onClick={this.saveRecordEvent}>Save Record</button>
-                }
+          <div className="form-row">
+            <div className="col-md-12">
+              <h1>Record Info</h1>
+                <label htmlFor="duration"></label>
+                  <input
+                    type="text"
+                    className="form-control"
+                    id="duration"
+                    placeholder="Enter Duration"
+                    value={duration}
+                    onChange={this.durationChange}
+                    />
+                <label htmlFor="pages-read"></label>
+                      <input
+                        type="text"
+                        className="form-control"
+                        id="pages-read"
+                        placeholder="Enter Total Pages Read"
+                        value={numOfPagesRead}
+                        onChange={this.numOfPagesReadChange}
+                        />
+            </div>
+          </div>
+            { recordId
+              ? <button className="btn btn-primary" onClick={this.editRecordEvent}>Update Record</button>
+              : <button className="btn btn-primary" onClick={this.saveRecordEvent}>Save Record</button>
+            }
+        </div>
             </form>
     );
   }

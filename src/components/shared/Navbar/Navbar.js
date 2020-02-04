@@ -33,7 +33,7 @@ class Navbar extends React.Component {
                 <Link className="nav-link" to="/"><FontAwesomeIcon icon={faList} id="list" size="2x" /></Link>
               </li>
               <li className="nav-item">
-                <button className="nav-link btn btn-primary d-none d-lg-inline-block" onClick={this.logMeOut}>Logout</button>
+                <button className="nav-link btn btn-danger d-none d-lg-inline-block" onClick={this.logMeOut}>Logout</button>
               </li>
             </ul>
           );
