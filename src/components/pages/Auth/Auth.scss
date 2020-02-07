@@ -1,5 +1,14 @@
 @import '../../../styles/variables';
 
 .Auth {
+  display: block;
+  justify-content: center;
   min-height: 100vh;
+  margin-top: 3em;
+}
+
+.card {
+  display: flex;
+  justify-content: center;
+  margin-left: 31.5em;
 }

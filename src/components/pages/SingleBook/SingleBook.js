@@ -41,7 +41,8 @@ class SingleBook extends React.Component {
     const { bookId } = this.props.match.params;
     return (
       <div className="SingleBook">
-        <div className=" col-sm-4">
+        {/* <h1 className="book-title">{book.title}</h1> */}
+        <div className="col-sm-4">
         <div className="card">
         <img src={book.imageUrl} className="card-img-top" id="singleBook-image" alt={book.imageUrl} />
           <div className="card-body">
