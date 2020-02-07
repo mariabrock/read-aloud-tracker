@@ -14,7 +14,15 @@ class Auth extends React.Component {
   render() {
     return (
     <div className="Auth">
-        <h1>Auth Page</h1>
+        <h1>Imagine Out Loud</h1>
+        <div class="card text-white bg-info col-sm-4">
+          <div class="col mb-4">
+            <div class="card-body">
+              <h5 class="card-title">“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”</h5>
+              <p class="card-text">― J.R.R. Tolkien, The Lord of the Rings</p>
+            </div>
+          </div>
+        </div>
         <button className="btn btn-success" onClick={this.loginClickEvent}>Login With Facebook</button>
       </div>
     );
