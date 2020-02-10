@@ -23,7 +23,8 @@ class Auth extends React.Component {
             </div>
           </div>
         </div>
-        <button className="btn btn-success" onClick={this.loginClickEvent}>Login With Facebook</button>
+        {/* <button className="btn btn-success" >Login With Facebook</button> */}
+        <div class="fb-login-button" data-width="" data-size="large" data-button-type="continue_with" data-auto-logout-link="false" data-use-continue-as="false" onClick={this.loginClickEvent}></div>
       </div>
     );
   }
