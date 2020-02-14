@@ -15,7 +15,7 @@ class Auth extends React.Component {
     return (
     <div className="Auth">
         <h1>Imagine Out Loud</h1>
-        <div className="card text-white bg-info col-sm-4" id="quote">
+        <div className="card text-back col-sm-4" id="quote">
           <div className="col mb-4">
             <div className="card-body">
               <h5 className="card-title">“It's a dangerous business, Frodo, going out your door. You step onto the road, and if you don't keep your feet, there's no knowing where you might be swept off to.”</h5>
