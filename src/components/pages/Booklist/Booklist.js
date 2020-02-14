@@ -53,7 +53,7 @@ class Booklist extends React.Component {
                 <button className="btn btn-success" onClick={this.showAllBooks}>All Books</button>
                 <button className="btn btn-danger" onClick={this.showCompletedBooks}>Complete</button>
                 <button className="btn btn-warning" onClick={this.showInProgressBooks}>In-Progress</button>
-                <button className="btn btn-info" onClick={this.showWishlistBooks}>Wishlist</button>
+                <button className="btn btn-primary" onClick={this.showWishlistBooks}>Wishlist</button>
                 <div className="booklist d-flex flex-wrap">
                   {this.state.selectedBooks.map((book) => (<List key={book.id} book={book} deleteBook={this.deleteBook} />))}
                 </div>
