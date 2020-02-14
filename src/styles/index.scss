@@ -7,8 +7,13 @@ body {
     sans-serif;
     font-family: 'Atma', cursive;
   -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  background-color: $dodgerBlue;
+  -moz-osx-font-smoothing: grayscale;background-image: url(https://images.unsplash.com/photo-1511298341002-15d91b5d09b7?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1950&q=80);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
+  background-size: cover;
+  // background-color: $dodgerBlue;
 }
 
 code {
@@ -35,6 +40,7 @@ code {
 .btn {
   color: $light;
   text-shadow: 1px 1px $dark;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 }
 
 h1, h5 {
