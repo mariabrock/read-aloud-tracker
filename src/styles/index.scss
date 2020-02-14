@@ -8,6 +8,7 @@ body {
     font-family: 'Atma', cursive;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: $dodgerBlue;
 }
 
 code {
@@ -16,8 +17,8 @@ code {
 }
 
 .card {
-  color: $light;
-  background-color: $teal;
+  color: $black;
+  background-color: $dodgerBlue;
   box-shadow: 0 3px 3px 0 $black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   border: none;
   margin-bottom: 1em;
@@ -26,7 +27,7 @@ code {
 
 .Record {
   color: $light;
-  background-color: $dodgerBlue;
+  background-color: $orange;
   height: min-content;
   width: min-content;
 }
@@ -51,8 +52,8 @@ img {
 }
 
 .navbar-custom {
-  background-color: $teal;
-  box-shadow: 0 3px 3px 0 $black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  // background-color: $dodgerBlue;
+  // box-shadow: 0 3px 3px 0 $black, 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 
   .navbar-brand {
     color: $light;

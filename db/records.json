@@ -1,6 +1,6 @@
 {
     "record1": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book1",
     "duration": 30,
     "numOfPagesRead": 42,
@@ -8,7 +8,7 @@
     },
 
     "record2": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book2",
     "duration": 30,
     "numOfPagesRead": 26,
@@ -16,7 +16,7 @@
     },
 
     "record3": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book2",
     "duration": 45,
     "numOfPagesRead": 39,
@@ -24,7 +24,7 @@
     },
 
     "record4": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book2",
     "duration": 15,
     "numOfPagesRead": 17,
@@ -32,7 +32,7 @@
     },
 
     "record5": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book2",
     "duration": 60,
     "numOfPagesRead": 47,
@@ -40,7 +40,7 @@
     },
 
     "record6": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book2",
     "duration": 15,
     "numOfPagesRead": 19,
@@ -48,7 +48,7 @@
     },
 
     "record7": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book3",
     "duration": 60,
     "numOfPagesRead": 24,
@@ -56,7 +56,7 @@
     },
 
     "record8": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book3",
     "duration": 60,
     "numOfPagesRead": 24,
@@ -64,7 +64,7 @@
     },
 
     "record9": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book3",
     "duration": 60,
     "numOfPagesRead": 24,
@@ -72,7 +72,7 @@
     },
 
     "record10": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book3",
     "duration": 60,
     "numOfPagesRead": 24,
@@ -80,7 +80,7 @@
     },
     
     "record11": {
-    "uid": "MpLQwerzLxWlqkYY4gpLMoFzdzx2",
+    "uid": "tRnNCriZixffphK7WzVfw1VICno1",
     "bookId": "book6",
     "duration": 30,
     "numOfPagesRead": 32,
