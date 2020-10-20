@@ -1,3 +1,20 @@
+# Imagine Out Loud
+
+## Description
+An application where a user can make lists of books they have read, or want to read. They can also add, edit or delete the time that they spend reading these books out loud.
+
+## Screenshots
+![Pageload]()
+![All Books]()
+![In Progress]()
+![Complete Books]()
+![Wishlist]()
+![Book View 1]()
+![Book View 2]()
+![Add A Book]()
+![Edit Book]()
+![Add A Record]()
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
