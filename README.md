@@ -1,19 +1,46 @@
-# Imagine Out Loud
+# NSS Frontend Capstone: Imagine Out Loud
 
 ## Description
-An application where a user can make lists of books they have read, or want to read. They can also add, edit or delete the time that they spend reading these books out loud.
+Imagine Out Loud is an app built to encourage families to
+read aloud together while spending quality time together
+and staying away from excessive screen time. Reading
+aloud is critical in early childhood development and helps
+in language, speech and literacy. My application is
+designed for use by a parent, or an older child who will
+track books being read and the amount of time that is
+read aloud.
+
+## Features
+
+- Built in React, JavaScript, CSS and HTML
+- Utilizes Firebase, and Google Auth for user login
+- User is able to add to and delete from their collection
+- Can add or edit a time they recorded allows visual for working toward a screen free time goal
+
+## Requirements
+
+- React
+- Firebase CRUD
+- Bootstrap
+- Use Github Projects for planning
+
+## Technologies Used
+
+- HTML5, SCSS, JavaScript
+- React Bootstrap, Bootstrap & SASS 0.5.0 for customized styling
+- React: For bundling components and building the UI
 
 ## Screenshots
-![Pageload]()
-![All Books]()
-![In Progress]()
-![Complete Books]()
-![Wishlist]()
-![Book View 1]()
-![Book View 2]()
-![Add A Book]()
-![Edit Book]()
-![Add A Record]()
+![Pageload](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/pageload.PNG)
+![All Books](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/allbooksview.PNG)
+![In Progress](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/inprogressbooks.PNG)
+![Complete Books](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/completebooks.PNG)
+![Wishlist](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/wishlist.PNG)
+![Book View 1](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/bookview.PNG)
+![Book View 2](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/bookview2.PNG)
+![Add A Book](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/addabook.PNG)
+![Edit Book](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/editbookinfo.PNG)
+![Add A Record](https://raw.githubusercontent.com/mariabrock/read-aloud-tracker/master/src/screenshots/addarecord.PNG)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
