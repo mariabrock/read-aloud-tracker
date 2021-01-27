@@ -1,0 +1,14 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace read_aloud_traker_db.Models
+{
+    public class Profile
+    {
+        public string profileId { get; }
+        public string username { get; }
+        public string profileURL { get; }
+    }
+}
